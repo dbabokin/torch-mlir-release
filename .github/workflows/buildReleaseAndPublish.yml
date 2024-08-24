@@ -32,8 +32,8 @@ jobs:
       - name: Checkout torch-mlir
         uses: actions/checkout@v4
         with:
-          repository: llvm/torch-mlir
-          ref: refs/heads/main
+          repository: dbabokin/torch-mlir
+          ref: refs/heads/build
           submodules: 'true'
 
       - name: Setup workspace
@@ -89,8 +89,8 @@ jobs:
       - name: Checkout torch-mlir
         uses: actions/checkout@v4
         with:
-          repository: llvm/torch-mlir
-          ref: refs/heads/main
+          repository: dbabokin/torch-mlir
+          ref: refs/heads/build
           submodules: 'true'
 
       - name: Setup workspace
