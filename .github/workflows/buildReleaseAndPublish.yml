@@ -103,7 +103,7 @@ jobs:
           tm_package_version="$(printf '%s.${{ github.run_number }}' `date +%Y%m%d`)"
           echo "tm_package_version=${tm_package_version}" >> $GITHUB_ENV
           printf "TORCH_MLIR_PYTHON_PACKAGE_VERSION=%s\n" ${tm_package_version} > ./torch_mlir_package_version
-          TORCH_MLIR_OSX_ARCH=arm64 TORCH_MLIR_PYTHON_VERSIONS=${{ matrix.py_version }} ./build_tools/python_deploy/build_macos_packages.sh
+          TORCH_MLIR_PYTHON_VERSIONS=${{ matrix.py_version }} ./build_tools/python_deploy/build_macos_packages.sh
 
       - name: Make assets available in dist
         run: |
