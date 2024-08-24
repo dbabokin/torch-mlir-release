@@ -83,7 +83,7 @@ jobs:
     strategy:
       matrix:
         package: [torch-mlir]
-        py_version: [3.11]
+        py_version: [3.11, 3.12]
 
     steps:
       - name: Checkout torch-mlir
